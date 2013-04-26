@@ -1,0 +1,480 @@
+/* LANDING PAGE */
+#map-container {
+    position: relative;
+    width: 610px;
+    height: 589px;
+}
+
+#map-container img {
+    position: absolute;
+}
+
+.stationicon {
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.notransfer {
+    width: 13px;
+    height: 13px;
+    background-image: url('../img/stationicon-notransfer-hasdates.png');
+    cursor: pointer;
+}
+
+.transfer {
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/stationicon-transfer-hasdates.png');
+    cursor: pointer;
+}
+
+/* Red Line */
+#shadygrove-icon {left: 13.4%; top:6.1%;}
+#rockville-icon {left: 16.6%; top: 9.2%;}
+#twinbrook-icon {left: 19.7%; top: 12.6%;}
+#whiteflint-icon {left: 23%; top: 15.8%;}
+#grosvenorstrathmore-icon {left: 25.9%; top: 18.9%;}
+#medicalcenter-icon {left: 28.5%; top: 21.6%;}
+#bethesda-icon {left: 30.7%; top: 23.9%;}
+#friendshipheights-icon {left: 33.1%; top: 26.3%;}
+#tenleytownau-icon {left: 35%; top: 28.1%;}
+#vannessudc-icon {left: 37.8%; top: 28.6%;}
+#clevelandpark-icon {left: 39.8%; top: 30.4%;}
+#woodleypark-icon {left: 41.7%; top: 32.3%;}
+#dupontcircle-icon {left: 43.6%; top: 34.3%;}
+#farragutnorth-icon {left: 44.4%; top: 37.6%;}
+#judiciarysquare-icon {left: 61.7%; top: 45.3%;}
+#unionstation-icon {left: 66%; top: 43.5%;}
+#nomagalludetu-icon {left: 66%; top: 40.3%;}
+#rhodeislandave-icon {left: 66%; top: 36.8%;}
+#brooklandcua-icon {left: 66%; top: 33.5%}
+#takoma-icon {left: 53.1%; top: 18.9%;}
+#silverspring-icon {left: 52.2%; top: 11.9%;}
+#forestglen-icon {left: 52.2%; top: 8.8%;}
+#wheaton-icon {left: 52.2%; top: 5.8%;}
+#glenmont-icon {left: 52.2%; top: 2.8%;}
+/* Orange Line */
+#vienna-icon {left: 5.1%; top: 49.8%;}
+#dunnloring-icon {left: 7.9%; top: 49.8%;}
+#westfallschurch-icon {left: 10.8%; top: 49.8%;}
+#eastfallschurch-icon {left: 13.7%; top: 49.8%;}
+#ballstonmu-icon {left: 16.7%; top: 49.8%;}
+#virginiasqgmu-icon {left: 19.8%; top: 49.8%;}
+#clarendon-icon {left: 22.8%; top: 49.8%;}
+#courthouse-icon {left: 25.8%; top: 49.8%;}
+#foggybottomgmu-icon {left: 38.3%; top: 40.8%;}
+#farragutwest-icon {left: 41.5%; top: 40.8%;}
+#mcphersonsq-icon {left: 46.5%; top: 40.8%;}
+#federaltriangle-icon {left: 49.43%; top: 48.8%;}
+#smithsonian-icon {left: 49.43%; top: 51.3%;}
+#federalcentersw-icon {left: 61%; top: 54.7%;}
+#capitolsouth-icon {left: 64%; top: 54.7%;}
+#easternmarket-icon {left: 66.8%; top: 54.5%;}
+#potomac-icon {left: 69.3%; top: 53.1%;}
+#minnesota-icon {left: 79.3%; top: 48.1%;}
+#deanwood-icon {left: 81.7%; top: 45.6%;}
+#cheverly-icon {left: 84%; top: 43.3%;}
+#landover-icon {left: 86.3%; top: 41%;}
+#newcarrollton-icon {left: 88.5%; top: 38.6%;}
+/* Yellow Line */
+#huntington-icon {left: 47.9%; top: 93.2%;}
+#eisenhowerave-icon {left: 47.9%; top: 88.7%;}
+#braddockroad-icon {left: 46.8%; top: 80.2%;}
+#ronaldreaganwashingtonnationalairport-icon {left: 46.7%; top: 77.1%;}
+#crystalcity-icon {left: 43.2%; top: 75%;}
+#pentagoncity-icon {left: 41.5%; top: 70.8%;}
+#archives-icon {left: 56.9%; top: 49%;}
+#mtvernonsq-icon {left: 56.9%; top: 40.8%;}
+#shawhowardu-icon {left: 56.9%; top: 37.1%;}
+#ustreet-icon {left: 54%; top: 34.4%;}
+#columbiaheights-icon {left: 51.2%; top: 31.2%;}
+#georgiaavepetworth-icon {left: 54%; top: 27.9%;}
+/* Green Line */
+#branchave-icon {left: 80.5%; top: 73.6%;}
+#suitland-icon {left: 78.4%; top: 71.4%;}
+#naylorroad-icon {left: 76.3%; top: 69%;}
+#southernave-icon {left: 72.5%; top: 69.9%;}
+#congressheights-icon {left: 70.2%; top: 68.2%;}
+#anacostia-icon {left: 68.3%; top: 66.3%;}
+#navyyardballpark-icon {left: 63.2%; top: 64.2%;}
+#waterfront-icon {left: 60.5%; top: 64.2%;}
+#westhyattsville-icon {left: 62.8%; top: 23%;}
+#princegeorgesplaza-icon {left: 65.1%; top: 20.6%;}
+#collegeparkuofmd-icon {left: 67.5%; top: 18.2%;}
+#greenbelt-icon {left: 69.9%; top: 15.7%;}
+/* Blue Line */
+#franconiaspringfield-icon {left: 28.3%; top: 92.9%;}
+#vandornstreet-icon {left: 33.9%; top: 87.1%;}
+#arlingtoncemetery-icon {left: 36.1%; top: 58.9%;}
+#benningroad-icon {left: 82.7%; top: 51.2%;}
+#capitolheights-icon {left: 85.8%; top: 51.2%;}
+#addisonroad-icon {left: 88.7%; top: 51.2%;}
+#morganboulevard-icon {left: 91.6%; top: 51.2%;}
+#largotowncenter-icon {left: 94.6%; top: 51.2%;}
+/* Transfer Stations */
+#metrocenter-icon {left: 48.3%; top: 44%;}
+#galleryplace-icon {left: 55.8%; top: 44%;}
+#forttotten-icon {left: 58.8%; top: 24.6%;}
+#rosslyn-icon {left: 29.6%; top: 43.3%;}
+#lenfantplaza-icon {left: 55.8%; top: 53.6%;}
+#stadiumarmory-icon {left: 73%; top: 50.1%;}
+#kingstoldtown-icon {left: 45.8%; top: 83.7%;}
+#pentagon-icon {left: 40.4%; top: 64.9%;}
+
+#station-info {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 10px 5px 10px;
+    min-width: 50px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    -webkit-box-shadow: -1px 10px 3px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -1px 10px 3px rgba(50, 50, 50, 0.2);
+    box-shadow: -1px 1px 10px rgba(50, 50, 50, 0.2);
+}
+
+#station-info p:first-child {
+    font-family: 'FranklinITCStd', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    line-height: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#station-info p:last-child {
+    line-height: 10px;
+    font-size: 10px;
+    color: #666;
+}
+
+.landing-banner-container {
+    position: relative;
+    height: 60px;
+}
+
+.landing-banner {
+    position: absolute;
+    height: 30px;
+    width: 580px;
+    left: 15px;
+    top: 15px;
+}
+
+.landing-banner-container h2 {
+    top: 15px;
+    color: #fff;
+}
+
+.left-circle {
+    position: absolute;
+    top: 15px;
+    left: 75px;
+}
+
+.right-circle {
+    position: absolute;
+    top: 15px;
+    left: 515px;
+}
+
+.left-list, .right-list {
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    text-align: center;
+    width: 270px;
+    float: left;
+    padding: 10px;
+}
+
+.left-list li a p, .right-list li a p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.left-list li a, .right-list li a {
+    text-decoration: none;
+}
+
+.left-list {
+    margin-left: 15px;
+}
+
+/* INTERIOR PAGE */
+
+#interior {
+    position: relative;
+    display: none;
+}
+
+h1 {
+    font-size: 4.0em;
+    font-family: 'PostoniDisplayRegular', 'Georgia', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'FranklinITCStd', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.exp {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#show-landing {
+    border: 1px solid #ccc;
+    padding: 4px 4px 3px 4px;
+    top: -10px;
+    right: 0px;
+    display: block;
+    position: absolute;
+    width: 80px;
+    text-decoration: none;
+}
+
+#show-landing img {
+    opacity: .5;
+}
+
+#show-landing p {
+    position: relative;
+    top: -10px;
+    display: inline;
+    font-size: 10px;
+    line-height: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 2px;
+}
+
+.red {background-color: #e51a37;}
+.orange {background-color: #f7921e;}
+.yellow {background-color: #ffd102;}
+.green {background-color: #01a850;}
+.blue {background-color: #0177c1;}
+
+/* buttons for picking a metro line */
+
+.filters {
+    display: block;
+    font-size: 12px;
+    width: 430px;
+    margin: 0px auto 0px auto;
+}
+
+.filters li {
+    float: left;
+}
+
+.filters li a {
+    display: block;
+    background-color: white;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 1px 1px 0 #efefef;
+    -webkit-box-shadow: 1px 1px 0 #efefef;
+    box-shadow: 1px 1px 0 #efefef;
+    color: #a8a8a8;
+    margin: 1px -1px 0 0;
+    padding: 9px 8px;
+    -moz-text-shadow: 0 0 1px white;
+    -webkit-text-shadow: 0 0 1px white;
+    text-shadow: 0 0 1px white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 69px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.filters li a:hover {
+    color: #7a7a7a;
+}
+
+.filters li a.active {
+    background-color: #FDFDFD;
+    -webkit-box-shadow: inset 0px 0px 7px #CCC;
+    -moz-box-shadow: inset 0px 0px 7px #ccc;
+    box-shadow: inset 0px 0px 7px #CCC;
+    border: 1px solid #a4a4a4;
+    color: black;
+}
+
+.filters li a.active:hover {
+    background-color: #FDFDFD;  cursor:default;
+}
+
+.filters li a img {
+    width: 10px;
+}
+
+/* making circles without images */
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+/* dropdown menu for jumping to a station */
+
+#user-input #input-text {
+    width: 493px;
+    margin: 0 auto;
+}
+
+#jump-container {
+    position: relative;
+    width: 300px;
+    margin: 15px auto 20px auto;
+}
+
+#jump-container input {
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    height: 22px; 
+    font-size: 14px; 
+    line-height:18px; 
+    color: #ccc; 
+    width: 260px; 
+    border: 1px solid #ccc; 
+    background: white; 
+    color: #222; 
+    padding:3px 30px 2px 7px; 
+    -moz-box-shadow:inset 0 0 10px -4px #999; 
+    -webkit-box-shadow:inset 0 0 10px -4px #999; 
+    box-shadow:inset 0 0 10px -4px #999;
+}
+
+#jump-container .ui-button {
+    background:white; 
+    position: absolute; 
+    left: 277px; 
+    top: 7px;
+    border: 0px;
+}
+
+.ui-autocomplete.ui-menu {
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    font-size: 12px;
+    max-height:300px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 300px; 
+    text-align: left;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-state-hover, .ui-autocomplete.ui-menu .ui-menu-item a.ui-state-hover {
+    margin: 0px;
+}
+
+#jump-container .ui-corner-left {
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -khtml-border-bottom-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -khtml-border-bottom-bottom-left-radius: 0px;
+}
+
+/* station banner & nav */
+
+#interior-banner-container {
+    position: relative;
+    width: 620px;
+    height: 100%;
+}
+
+#interior-banner {
+    position: absolute;
+    height: 30px;
+    width: 580px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    left: 20px;
+}
+
+#banner-prev img {position: absolute; left: 75px; top: 15px;}
+#banner-heart {position: absolute; left: 275px;}
+#banner-next img {position: absolute; left: 515px; top: 15px;}
+
+h2 {
+    position: relative;
+    top: 65px;
+    text-align: center;
+    font-family: 'FranklinITCStd', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#currentstop p {
+    line-height: 1.0em;
+}
+
+#prev p, #next p {
+    line-height: 12px;
+    text-align: center;
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    padding: 0px 10px 0px 10px;
+}
+
+#prev {
+    width: 140px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+#next {
+    width: 140px;
+    position: absolute;
+    top: 50px;
+    left: 460px;
+}
+
+/* date places */
+
+#datespot-container {
+    width: 580px;
+    margin: 90px 20px 30px;
+}
+
+.datespot {
+    text-align: left;
+}
+
+.address {
+    font-family: 'FranklinITCStdLight', 'Franklin Gothic', 'ITC Franklin Gothic', 'Arial', sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#datespot-container .datespot-description {
+    margin-bottom: 15px;
+}
+
+/* twitter stream */
+
+.tweet-header {text-decoration: none; background: url('../img/twitter-bird.png') no-repeat 0 1px; none;}
+.module p.tweet-header {padding-left: 24px;}
+.tweet {padding:10px;margin-bottom:8px;background:#eef2f5;}
+.tweet .username {font-weight:bold; margin-top: 18px; margin-bottom: 5px;}
+.tweet p {line-height:16px;}
+.tweet p.tweet-text {margin-bottom:4px}
+.tweet p.dateline {margin:0;}
+.tweet .dateline a {color: #999;font-size: 11px;}
+.tweet .dateline a:hover {color: #057ce2}
+.tweet .avatar {float: left; margin-right: 10px; width: 30px; height: 30px;}

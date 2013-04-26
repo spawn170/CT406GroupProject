@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>By Mass Transit - Find Rentals Near D.C.'s Metro Rail Stops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="styles/rentals.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="wrapper">
+	<img src="images/bptlogo.jpg" alt="Fell Swoop" id="logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="images/dcapartment.jpg" alt="Fell Swoop" id="logo" />
+	<img src="images/dcloft.jpg" alt="Fell Swoop" id="logo" />
+	<img src="images/dcrowhouses.jpg" alt="Fell Swoop" id="logo" />
+    <p id="bloglink"><a href="http://www.fellswoop.com/blog">Our Blog<span>: Rad Pad</span></a></p>
+    <div id="leftBox">
+    <h1>No apartment?<span><br /></span>No car?<br />No problem.</h1>	
+    </div>
+    <div id="rightBox">
+    <img src="images/dcmap.png"/>
+    </div>
+    <h2>Finding housing in a new city is hard.</h2>
+    <p>Especially in the Washington, D.C. metro area where housing is spread out from the city center. Luckily, D.C. has one of the best 
+    public transportation systems in the country. The key is trying to find housing that is within a close enough radius to each Metro stop.</p>
+    <p>By Mass Transit attempts to ease the search for good rental housing in the city by only showing the listings you want to see by 
+    the Metro Stop you want to live near. That means if you want to live within a ten minute walk to the Chinatown/Gallery Place Metro station (great location, BTW!), then you'll only see listings
+    for that particular area. It's that simple.</p>
+    <h2>Give it a try:</h2> 
+   <img src="images/metromap.png"> 
+   <script type="text/javascript">
+        if (document.location.href.indexOf('template=desktop') === -1) {
+            if (!(document.cookie.indexOf("sd=") == 0 || document.cookie.indexOf("; sd=") >= 0 )) {
+                if (window.screen.width*window.screen.height/Math.pow((window.devicePixelRatio == undefined || navigator.userAgent.match(/(iPhone|iPod)/i) ? 1 : window.devicePixelRatio),2) < 480000) { 
+                    window.location="http://www.washingtonpost.com/wp-srv/special/entertainment/metro-love/m/";
+                }
+            }
+            if ((document.cookie.indexOf("sd=1") == 0 || document.cookie.indexOf("; sd=1") >= 0 )) {
+                document.cookie= "sd=;expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=.washingtonpost.com;"; // clear cookie    
+            }
+        }
+    </script>
+     <div id="landing">
+                    <h3>Click on a station to see available rentals near it:</h3>
+
+                    <div id="map-container">
+                        <img src="img/map.png">
+                          <!-- Red Line -->
+                        <img src="images/redlinebar.png">
+                        <div class="stations">
+                        Rockville<br />
+                        Grosvenor-Strathmore<br />
+                        Bethesda<br />
+                        Friendship Heights<br />
+                        Tenleytown-AU<br />
+                        Van Ness-UDC<br />
+                        Cleveland Park<br />
+                        Woodley Park-Zoo/Adams Morgan<br />
+                        Dupont Circle<br />
+                        Farragut North<br />
+                        Judiciary Square<br />
+                        Union Station<br />
+                        NoMa-Galludet U<br />
+                        Rhode Island Avenue<br />
+                        Brookland-CUA<br />
+                        Takoma<br />
+                        Silver Spring<br />
+                        Forest Glen<br />
+                        Wheaton<br />
+                        </div>
+                        <br />
+                        <!-- Orange Line -->
+                        <img src="images/orangelinebar.png">
+                        <div class="stationicon notransfer" data-line="Orange" data-station="East Falls Church" id="eastfallschurch-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Ballston" id="ballstonmu-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Virginia Square" id="virginiasqgmu-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Clarendon" id="clarendon-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Court House" id="courthouse-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Foggy Bottom" id="foggybottomgmu-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Farragut West" id="farragutwest-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="McPherson Square" id="mcphersonsq-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Federal Triangle" id="federaltriangle-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Smithsonian" id="smithsonian-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Federal Center SW" id="federalcentersw-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Capitol South" id="capitolsouth-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Eastern Market" id="easternmarket-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Potomac Avenue" id="potomac-icon"></div>
+                        <div class="stationicon notransfer" data-line="Orange" data-station="Deanwood" id="deanwood-icon"></div>
+                        <!--Yellow Line-->
+                        <img src="images/yellowlinebar.png">
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Braddock Road" id="braddockroad-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Ronald Reagan Washington National Airport" id="ronaldreaganwashingtonnationalairport-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Crystal City" id="crystalcity-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Pentagon City" id="pentagoncity-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Archives" id="archives-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Mt. Vernon Square" id="mtvernonsq-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Shaw-Howard U" id="shawhowardu-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="U Street" id="ustreet-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Columbia Heights" id="columbiaheights-icon"></div>
+                        <div class="stationicon notransfer" data-line="Yellow" data-station="Georgia Ave-Petworth" id="georgiaavepetworth-icon"></div>
+                        <!-- Green Line -->
+                        <img src="images/greenlinebar.png">
+                        <div class="stationicon notransfer" data-line="Green" data-station="Anacostia" id="anacostia-icon"></div>
+                        <div class="stationicon notransfer" data-line="Green" data-station="Navy Yard-Ballpark" id="navyyardballpark-icon"></div>
+                        <div class="stationicon notransfer" data-line="Green" data-station="Waterfront" id="waterfront-icon"></div>
+                        <div class="stationicon notransfer" data-line="Green" data-station="Prince George's Plaza" id="princegeorgesplaza-icon"></div>
+                        <div class="stationicon notransfer" data-line="Green" data-station="College Park" id="collegeparkuofmd-icon"></div>
+                        <!-- Blue Line -->
+                        <img src="images/bluelinebar.png">
+                        <div class="stationicon notransfer" data-line="Blue" data-station="Arlington Cemetery" id="arlingtoncemetery-icon"></div>
+                        <!-- Transfer Stations -->
+                        <div class="stationicon transfer" data-line="Red" data-station="Metro Center" id="metrocenter-icon"></div>
+                        <div class="stationicon transfer" data-line="Red" data-station="Gallery Place-Chinatown" id="galleryplace-icon"></div>
+                        <div class="stationicon transfer" data-line="Orange" data-station="Rosslyn" id="rosslyn-icon"></div>
+                        <div class="stationicon transfer" data-line="Orange" data-station="L'Enfant Plaza" id="lenfantplaza-icon"></div>
+                        <div class="stationicon transfer" data-line="Orange" data-station="Stadium-Armory" id="stadiumarmory-icon"></div>
+                        <div class="stationicon transfer" data-line="Yellow" data-station="King Street-Old Town" id="kingstoldtown-icon"></div>
+                        <div class="stationicon transfer" data-line="Yellow" data-station="Pentagon" id="pentagon-icon"></div>
+                    </div>
+
+                    <div id="list-view-container">
+                        <div class="landing-banner-container">
+                            <div class="red landing-banner"></div>
+                            <h2>Red Line</h2>
+                            <img class="left-circle" src="img/banner-circle.png">
+                            <img class="right-circle" src="img/banner-circle.png">
+                        </div>
+                        <ul class="left-list" id="red-left-list">
+                        </ul>
+                        <ul class="right-list" id="red-right-list">
+                        </ul>
+                        <div class="clear"></div>
+
+                        <div class="landing-banner-container">
+                            <div class="orange landing-banner"></div>
+                            <h2>Orange Line</h2>
+                            <img class="left-circle" src="img/banner-circle.png">
+                            <img class="right-circle" src="img/banner-circle.png">
+                        </div>
+                        <ul class="left-list" id="orange-left-list">
+                        </ul>
+                        <ul class="right-list" id="orange-right-list">
+                        </ul>
+                        <div class="clear"></div>
+
+                        <div class="landing-banner-container">
+                            <div class="yellow landing-banner"></div>
+                            <h2>Yellow Line</h2>
+                            <img class="left-circle" src="img/banner-circle.png">
+                            <img class="right-circle" src="img/banner-circle.png">
+                        </div>
+                        <ul class="left-list" id="yellow-left-list">
+                        </ul>
+                        <ul class="right-list" id="yellow-right-list">
+                        </ul>
+                        <div class="clear"></div>
+
+                        <div class="landing-banner-container">
+                            <div class="green landing-banner"></div>
+                            <h2>Green Line</h2>
+                            <img class="left-circle" src="img/banner-circle.png">
+                            <img class="right-circle" src="img/banner-circle.png">
+                        </div>
+                        <ul class="left-list" id="green-left-list">
+                        </ul>
+                        <ul class="right-list" id="green-right-list">
+                        </ul>
+                        <div class="clear"></div>
+
+                        <div class="landing-banner-container">
+                            <div class="blue landing-banner"></div>
+                            <h2>Blue Line</h2>
+                            <img class="left-circle" src="img/banner-circle.png">
+                            <img class="right-circle" src="img/banner-circle.png">
+                        </div>
+                        <ul class="left-list" id="blue-left-list">
+                        </ul>
+                        <ul class="right-list" id="blue-right-list">
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="interior">
+                    <a href="#" id="show-landing">
+                        <img width="30px" height="30px" src="img/mini-map.jpg">
+                        <p>Map View</p>
+                    </a>
+                
+
+                    <div id="interior-banner-container">
+                        <div id="interior-banner"></div>
+                        <a id="banner-prev" href="#"><img src="img/banner-prev.png"></a>
+                        <img id="banner-heart" src="img/banner-heart.png">
+                        <a id="banner-next" href="#"><img src="img/banner-next.png"></a>
+                        <h2 id="currentstop"></h2>
+                        <div id="prev">
+                            <p id="prev-text"></p>
+                            <p id="prev-stopname"></p>
+                        </div>
+                        <div id="next">
+                            <p id="next-text"></p>
+                            <p id="next-stopname"></p>
+                        </div>
+                    </div>
+
+                    <div id="datespot-container">
+                    </div>
+                </div>
+ 
+    <h2>About Us</h2>
+    <div class="columnThird">
+    	<p>We are a team of current college students and recent graduates in the D.C. metropolitan area
+    	who know what it's like to struggle to search for decent housing near public transportation.
+    	We are also a dynamic team of developers, designers, information architects, project managers and all around awesome people who are in love
+    	with the web and know it well. If you have web development, database management, design, marketing or finance skills, give us a shout!</p>
+        <p>General Inquiries:<br />Ty Trapps<br /><a href="mailto:trapps.ty@gmail.com">trapps.ty@gmail.com</a><br />954-707-0363</p>
+        <p>New Business Inquiries:<br />Sandra Trapps<br /><a href="mailto:strapps56@gmail.com">strapps56@gmail.com</a><br />301-980-9348</p>
+	</div>
+</div>
+<div id="footer">
+	<div id="footerWrapper">
+    	<p>&copy;2013 Ty Trapps. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
