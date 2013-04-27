@@ -1,0 +1,90 @@
+BO	Addison Road
+G	Anacostia
+GY	Archives
+B	Arlington Cemetery
+O	Ballston-MU
+BO	Benning Road
+R	Bethesda
+BY	Braddock Road
+G	Branch Avenue
+R	Brookland-CUA
+BO	Capitol Heights
+BO	Capitol South
+O	Cheverly
+O	Clarendon
+R	Cleveland Park
+GY	College Park - University of Maryland
+GY	Columbia Heights
+G	Congress Heights
+O	Court House
+BY	Crystal City
+O	Deanwood
+O	Dunn Loring
+R	Dupont Circle
+O	East Falls Church
+BO	Easter Market
+Y	Eisenhower Avenue
+R	Farragut North
+BO	Farragut West
+BO	Federal Center SW
+BO	Federal Triangle
+BO	Foggy Bottom - GWU
+R	Forest Glen
+GY	Fort Totten
+R	Fort Totten
+BY	Franconia-Springfield
+R	Friendship Heights
+GY	Gallery Place
+R	Gallery Place
+GY	Georgia Avenue - Petworth
+R	Glenmont
+GY	Greenbelt
+R	Grosvenor-Strathmore
+Y	Huntington
+R	Judiciary Square
+BY	King Street - Old Town
+BO	L'Enfent Plaza
+GY	L'Enfent Plaza
+O	Landover
+BO	Largo Town Center
+BO	McPherson Square
+R	Medical Center
+BO	Metro Center
+R	Metro Center
+O	Minnesota Avenue
+BO	Morgan Boulevard
+GY	Mount Vernon Square
+G	Navy Yard - Ballpark
+G	Naylor Road
+O	New Caroollton
+R	NoMa - Gallaudet University
+BY	Pentagon
+BY	Pentagon City
+BO	Potomac Avenue
+GY	Prince George's Plaza
+R	Rhode Island Avenue - Brentwood
+R	Rockville
+BY	Ronald Reagan Washington National Airport
+BO	Rosslyn
+R	Shady Grove
+GY	Shaw-Howard University
+R	Silver Spring
+BO	Smithsonian
+G	Southern Avenue
+BO	Stadium-Armory
+G	Suitland
+R	Takoma
+R	Tenleytown-AU
+R	Twinbrook
+GY	U Street
+R	Union Station
+BY	Van Dorn Street
+R	Van Ness - UDC
+O	Vienna
+O	Virginia Square - GMU
+G	Waterfront
+O	West Falls Church
+GY	West Hyattsville
+R	Wheaton
+R	White Flint
+R	Woodley Park
