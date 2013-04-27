@@ -1,3 +1,18 @@
+<?
+	session_start();
+
+	$link = mysql_connect('localhost', 'apmaricich', 'ct406');
+	$db = mysql_select_db('ct406s13');
+
+	$query = "SELECT * FROM ih_proj4User;";
+
+	function average($arr) {
+	   if (!is_array($arr)) return false;
+	   return array_sum($arr)/count($arr);
+	}
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -45,6 +60,32 @@
 				<br />
 				<input type="submit" value="Login" />
 			</form>
+		</article>
+		<article id="counteravg">
+			<p>
+				Number of users:
+				<?
+					$users = 0;
+
+					$result = mysql_query($query);
+					while ($row = mysql_fetch_array($result)) {
+						$users += 1;
+					}
+					echo($users);
+				?>
+			</p>
+			<p>
+				Average age:
+				<?
+					$ages = array();
+
+					$result = mysql_query($query);
+					while ($row = mysql_fetch_array($result)) {
+						$ages[] = $row['age'] + 0;
+					}
+					echo(average($ages));
+				?>
+			</p>
 		</article>
 	</section>
 	
