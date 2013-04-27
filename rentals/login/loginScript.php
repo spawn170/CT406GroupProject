@@ -6,7 +6,8 @@
 
 	$email = $_POST['email'];
 	$passwd = $_POST['passwd'];
-	$select = "SELECT * FROM table_name WHERE email='$email' AND password='$passwd' AND verified=1;";
+	$hashpass = md5($passwd);
+	$select = "SELECT * FROM ih_proj4User WHERE email='$email' AND pswd='$hashpass' AND validate=1;";
 
 	$result = mysql_query($select);
 	$exist = mysql_num_rows($result);

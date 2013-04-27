@@ -1,5 +1,5 @@
 <?php
-	$email = $_GET['email'];
+	$email = $_POST['email'];
 ?>
 <!DOCTYPE HTML>
 <html lang="en">

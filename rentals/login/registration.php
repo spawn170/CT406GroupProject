@@ -10,8 +10,8 @@
 	$color = $_POST['color'];
 	$hash = md5(rand(0,1000));
 	$encrypted_passwd = md5($passwd);
-	$query = "SELECT * FROM table_name WHERE email='$email'";
-	$insert = "INSERT INTO table_name (email, password, hash, age, color) VALUES ('$email', '$encrypted_passwd', '$hash', $age, '$color');"
+	$query = "SELECT * FROM ih_proj4User WHERE email='$email'";
+	$insert = "INSERT INTO ih_proj4User (email, pswd, hash, age, color, validate) VALUES ('$email', '$encrypted_passwd', '$hash', $age, '$color', 0);"
 
 
 	// Validate input
@@ -39,7 +39,7 @@
 		Password: '. $passwd . ' 
 		------------------------ 
 		Please click this link to activate your account: 
-		http://leda.capitol-college.edu/npharrell?verification.php&email='$email'&hash='$hash';
+		http://leda.capitol-college.edu/insert_path_here/verification.php&email='$email'&hash='$hash';
 		$headers = 'From:noreply@metrolistings.com' . "\r\n";
 		mail($to, $subject, $message, $headers);
 	}

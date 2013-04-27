@@ -5,8 +5,8 @@
 
 	$email = $_GET['email'];
 	$hash = $_GET['hash'];
-	$select = "SELECT * FROM table_name WHERE email='$email' AND hash='$hash';";
-	$update = "UPDATE table_name SET verified=1 WHERE email='$email';";
+	$select = "SELECT * FROM ih_proj4User WHERE email='$email' AND hash='$hash';";
+	$update = "UPDATE ih_proj4User SET validate=1 WHERE email='$email';";
 
 	$result = mysql_query($select);
 	$exist = mysql_num_rows($result);

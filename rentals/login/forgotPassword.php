@@ -5,7 +5,7 @@
 
 	// Get form input as well as data we will need for registration
 	$email = $_POST['email'];
-	$query = "SELECT * FROM table_name WHERE email='$email'";
+	$query = "SELECT * FROM ih_proj4User WHERE email='$email'";
 	
 
 
