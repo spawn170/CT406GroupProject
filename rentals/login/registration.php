@@ -10,14 +10,21 @@
 	$color = $_POST['color'];
 	$hash = md5(rand(0,1000));
 	$encrypted_passwd = md5($passwd);
-	$query = "SELECT * FROM ih_proj4User WHERE email='$email'";
-	$insert = "INSERT INTO ih_proj4User (email, pswd, hash, age, color, validate) VALUES ('$email', '$encrypted_passwd', '$hash', $age, '$color', 0);"
+	$get = "SELECT * FROM ih_proj4User";
+
+	$result = mysql_query($get);
+	$num = mysql_num_rows($result);
+	// $query = "SELECT * FROM ih_proj4User WHERE email='$email'";
+	$query = sprintf("SELECT * FROM ih_proj4User WHERE email='%s'", mysql_real_escape_string($email));
+	// $insert = "INSERT INTO ih_proj4User (email, pswd, hash, age, color, validate) VALUES ('$email', '$encrypted_passwd', '$hash', $age, '$color', 1);";
+	$insert = sprintf("INSERT INTO ih_proj4User VALUES ($num, '%s', '%s', '%s', $age, '%s', 1);", mysql_real_escape_string($email), mysql_real_escape_string($encrypted_passwd), mysql_real_escape_string($hash), mysql_real_escape_string($color));
 
 
 	// Validate input
-	if (!isValidEmail($email)) {
-		header('Location: pass.php?head=SQL+Injection+Prevented&sub=Dont+do+that+again');
-	}
+	// $valid = isValidEmail($email);
+	// if (!$valid) {
+	// 	header('Location: pass.php?head=SQL+Injection+Prevented&sub=Dont+do+that+again');
+	// }
 
 
 	// Check to see if user already exsists in the database. $exist
@@ -28,6 +35,7 @@
 		header('Location: pass.php?head=User+Already+Exists&sub=Try+again+with+a+different+email');
 	}
 	else if (!$exist) {
+		$result = mysql_query($insert);
 		//create the new user in the database
 		$to      = $email; 
 		$subject = 'Metro Listings Email Verification';
@@ -39,9 +47,10 @@
 		Password: '. $passwd . ' 
 		------------------------ 
 		Please click this link to activate your account: 
-		http://leda.capitol-college.edu/insert_path_here/verification.php&email='$email'&hash='$hash';
+		http://leda.capitol-college.edu/~apmaricich/rentals/login/verification.php&email='.$email.'&hash='.$hash.'';
 		$headers = 'From:noreply@metrolistings.com' . "\r\n";
 		mail($to, $subject, $message, $headers);
+		header('Location: pass.php?head=Email+Sent&sub=Check+your+email');
 	}
 
 

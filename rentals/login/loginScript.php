@@ -21,6 +21,6 @@
  			$_SESSION['age'] = $row{'age'};
  			$_SESSION['id'] = $row{'id'};
 		}
-		header('Location: index.php');
+		header('Location: ../rentals.html');
 	}
 ?>
