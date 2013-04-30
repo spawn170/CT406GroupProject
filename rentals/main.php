@@ -1,4 +1,47 @@
 <!DOCTYPE html>
+
+<?
+
+	$link = mysql_connect('localhost', 'ijharley', 'ct406');
+    $db = mysql_select_db("ct406s13", $link);
+	
+	$sql = "SELECT * FROM ih_proj4Stop ORDER BY name";
+	
+	$result = mysql_query($sql);
+	
+	while ($row = mysql_fetch_array($result))
+    {
+		if(strpos($row['line'],"Green") !== false)
+		{
+			$gstops[] = $row['name'];
+			$gids[] = $row['id'];
+		}
+		if(strpos($row['line'],"Red") !== false)
+		{
+			$rstops[] = $row['name'];
+			$rids[] = $row['id'];
+		}
+		if(strpos($row['line'],"Blue") !== false)
+		{
+			$bstops[] = $row['name'];
+			$bids[] = $row['id'];
+		}
+		if(strpos($row['line'],"Orange") !== false)
+		{
+			$ostops[] = $row['name'];
+			$oids[] = $row['id'];
+		}
+		if(strpos($row['line'],"Yellow") !== false)
+		{
+			$ystops[] = $row['name'];
+			$yids[] = $row['id'];
+		}
+	}
+	
+    mysql_close($link);
+	
+?>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -49,108 +92,42 @@
                     <div id="accordion">
                        <h3><img src="images/redlinebar.png"></h3>
                         <div>
-                        Rockville<br />
-                        Bethesda<br />
-                        Friendship Heights<br />
-                        Tenleytown-AU<br />
-                        Van Ness-UDC<br />
-                        Cleveland Park<br />
-                        Woodley Park-Zoo/Adams Morgan<br />
-                        Dupont Circle<br />
-                        NoMa-Galludet U<br />
-                        Rhode Island Avenue<br />
-                        Brookland-CUA<br />
-                        Fort Totten<br /> 
-                        Takoma<br />
-                        Silver Spring<br />
-                        Forest Glen<br />
-                        Wheaton<br />
+						<?
+							for($i = 0; $i < count($rstops); $i ++)
+								echo '<a href="stopPage.php&stop='.$rids[$i].'">'.$rstops[$i].'</a><br />';
+						?>
                         </div>
                         <!-- Orange Line -->
                         <h3><img src="images/orangelinebar.png"></h3>
                         <div>
-                        Vienna<br /> 	
-                        Dunn Loring<br /> 
-                        West Falls Church<br />  		
-                        East Falls Church<br /> 
-  						Ballston–MU<br /> 
-						Virginia Square – GMU<br /> 	
-						Clarendon<br /> 		
-						Rosslyn<br /> 
-						Foggy Bottom – GWU<br /> 	 	
-						Capitol South<br /> 	
-						Eastern Market<br /> 	
-						Potomac Avenue<br /> 	
-						Stadium–Armory<br /> 
-						Minnesota Avenue<br /> 	
-						Deanwood<br /> 		
-						Cheverly<br />  		
-						Landover<br /> 		
-						New Carrollton<br /> 
+                        <?
+							for($i = 0; $i < count($ostops); $i ++)
+								echo '<a href="stopPage.php&stop='.$oids[$i].'">'.$ostops[$i].'</a><br />';
+						?>
 						</div>
                         <!--Yellow Line-->
                         <h3><img src="images/yellowlinebar.png"></h3>
                         <div>
-                        Huntington<br /> 
-						Eisenhower Avenue<br /> 	
-						King Street – Old Town<br />  	
-						Braddock Road<br /> 	
-						Ronald Reagan Washington National Airport<br /> 	
-						Crystal City<br /> 	
-						Pentagon City<br /> 	
-						L'Enfant Plaza<br /> 
-						Gallery Place<br /> 
-						Mount Vernon Square<br /> 
-						Shaw – Howard University<br />	
-						U Street / African-American Civil War Memorial / Cardozo<br /> 	
-						Columbia Heights<br /> 	
-						Georgia Avenue – Petworth<br /> 	
-						Fort Totten<br /> 
-						West Hyattsville<br />  	
-						Prince George's Plaza<br /> 
-						College Park – University of Maryland<br />  
-						Greenbelt<br /> 
+                        <?
+							for($i = 0; $i < count($ystops); $i ++)
+								echo '<a href="stopPage.php&stop='.$yids[$i].'">'.$ystops[$i].'</a><br />';
+						?>
 						</div>
                         <!-- Green Line -->
                         <h3><img src="images/greenlinebar.png"> </h3>
                         <div>
-                        L'Enfant Plaza<br /> 
-						Gallery Place<br /> 
-						Mount Vernon Square<br /> 
-						Shaw – Howard University<br />	
-						U Street / African-American Civil War Memorial / Cardozo<br /> 	
-						Columbia Heights<br /> 	
-						Georgia Avenue – Petworth<br /> 	
-						Fort Totten<br /> 
-						West Hyattsville<br />  	
-						Prince George's Plaza<br /> 
-						College Park – University of Maryland<br />  
-						Greenbelt<br /> 
+                        <?
+							for($i = 0; $i < count($gstops); $i ++)
+								echo '<a href="stopPage.php&stop='.$gids[$i].'">'.$gstops[$i].'</a><br />';
+						?>
 						</div>
                         <!-- Blue Line -->
 						<h3><img src="images/bluelinebar.png"></h3>
 						<div>   
-						Franconia–Springfield<br />
-						Van Dorn Street<br /> 	
-						King Street – Old Town<br />
-						Braddock Road<br />		
-						Crystal City<br />	
-						Pentagon City<br />	
-						Rosslyn<br /> 
-						Foggy Bottom – GWU<br /> 	 	
-						Capitol South<br /> 	
-						Eastern Market<br /> 	
-						Potomac Avenue<br /> 	
-						Stadium–Armory<br /> 
-						Benning Road<br /> 
-						Capitol Heights<br /> 
-						Addison Road<br />  	
-						Morgan Boulevard<br />  	
-						Largo Town Center<br /> 
-						Capitol Heights<br /> 
-						Addison Road<br /> 	
-						Morgan Boulevard<br /> 
-						Largo Town Center<br /> 
+						<?
+							for($i = 0; $i < count($bstops); $i ++)
+								echo '<a href="stopPage.php&stop='.$bids[$i].'">'.$bstops[$i].'</a><br />';
+						?>
 						</div>
 	   </div>
 	</div>

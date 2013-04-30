@@ -8,7 +8,7 @@
 <body>
 <?
 	// gets the name of the stop the user clicked on
-	$stopName = $_GET['stop'];
+	$stopName = $_REQUEST['stop'];
 	// $lineColor = $_GET['color'];
 	
 	echo "<h3> Listings for ".$stopName."</h3>";
