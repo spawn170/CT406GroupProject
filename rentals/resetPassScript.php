@@ -1,5 +1,5 @@
 <?php
-	$link = mysql_connect('localhost', 'apmaricich', 'ct406');
+	$link = mysql_connect('localhost', 'ijhurley', 'ct406');
 	$db = mysql_select_db('ct406s13');
 
 	$email = $_POST['email'];

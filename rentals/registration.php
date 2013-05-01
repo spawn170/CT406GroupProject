@@ -1,6 +1,6 @@
 <?php
 	// Connect to the database
-	$link = mysql_connect('localhost', 'apmaricich', 'ct406');
+	$link = mysql_connect('localhost', 'ijhurley', 'ct406');
 	$db = mysql_select_db('ct406s13');
 
 	// Get form input as well as data we will need for registration
@@ -49,7 +49,7 @@
 		Please click this link to activate your account: 
 		http://leda.capitol-college.edu/~apmaricich/rentals/login/verification.php&email='.$email.'&hash='.$hash.'';
 		$headers = 'From:noreply@metrolistings.com' . "\r\n";
-		mail($to, $subject, $message, $headers);
+		//mail($to, $subject, $message, $headers);
 		header('Location: pass.php?head=Email+Sent&sub=Check+your+email');
 	}
 
