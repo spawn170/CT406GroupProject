@@ -50,7 +50,8 @@
 		http://leda.capitol-college.edu/~apmaricich/rentals/login/verification.php&email='.$email.'&hash='.$hash.'';
 		$headers = 'From:noreply@metrolistings.com' . "\r\n";
 		//mail($to, $subject, $message, $headers);
-		header('Location: pass.php?head=Email+Sent&sub=Check+your+email');
+		//header('Location: pass.php?head=Email+Sent&sub=Check+your+email');
+		header('Location: doneRegistered.php');
 	}
 
 
