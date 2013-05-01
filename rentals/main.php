@@ -3,6 +3,8 @@
 <?
 	session_start();
 
+	$age = $_SESSION['age'];
+	
 	$link = mysql_connect('localhost', 'ijharley', 'ct406');
     $db = mysql_select_db("ct406s13", $link);
 	
@@ -70,6 +72,15 @@
 	<img src="images/dcapartment.jpg" />
 	<img src="images/dcloft.jpg" />
 	<img src="images/dcrowhouses.jpg" />
+	<br>
+	<?
+		echo '<image src="images/';
+		if($age >= 60)
+			echo 'retirement';
+		else
+			echo 'wintervacation';
+		echo '.gif"></image>';
+	?>
     <div id="leftBox">
     <h1>No apartment?<span><br /></span>No car?<br />No problem.</h1>	
     </div>
