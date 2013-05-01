@@ -94,7 +94,7 @@
                         <div>
 						<?
 							for($i = 0; $i < count($rstops); $i ++)
-								echo '<a href="stopPage.php&stop='.$rids[$i].'">'.$rstops[$i].'</a><br />';
+								echo '<a href="stop.php?stop='.$rids[$i].'">'.$rstops[$i].'</a><br />'."\n";
 						?>
                         </div>
                         <!-- Orange Line -->
@@ -102,7 +102,7 @@
                         <div>
                         <?
 							for($i = 0; $i < count($ostops); $i ++)
-								echo '<a href="stopPage.php&stop='.$oids[$i].'">'.$ostops[$i].'</a><br />';
+								echo '<a href="stop.php?stop='.$oids[$i].'">'.$ostops[$i].'</a><br />'."\n";
 						?>
 						</div>
                         <!--Yellow Line-->
@@ -110,7 +110,7 @@
                         <div>
                         <?
 							for($i = 0; $i < count($ystops); $i ++)
-								echo '<a href="stopPage.php&stop='.$yids[$i].'">'.$ystops[$i].'</a><br />';
+								echo '<a href="stop.php?stop='.$yids[$i].'">'.$ystops[$i].'</a><br />'."\n";
 						?>
 						</div>
                         <!-- Green Line -->
@@ -118,7 +118,7 @@
                         <div>
                         <?
 							for($i = 0; $i < count($gstops); $i ++)
-								echo '<a href="stopPage.php&stop='.$gids[$i].'">'.$gstops[$i].'</a><br />';
+								echo '<a href="stop.php?stop='.$gids[$i].'">'.$gstops[$i].'</a><br />'."\n";
 						?>
 						</div>
                         <!-- Blue Line -->
@@ -126,7 +126,7 @@
 						<div>   
 						<?
 							for($i = 0; $i < count($bstops); $i ++)
-								echo '<a href="stopPage.php&stop='.$bids[$i].'">'.$bstops[$i].'</a><br />';
+								echo '<a href="stop.php?stop='.$bids[$i].'">'.$bstops[$i].'</a><br />'."\n";
 						?>
 						</div>
 	   </div>
