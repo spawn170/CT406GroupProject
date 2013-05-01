@@ -29,7 +29,7 @@
 		$db = mysql_select_db("ct406s13", $link);
 		
 		// selects the listings for the stop selected
-		$sql = "SELECT ih_proj4Listing.name FROM ih_proj4Listing ";
+		$sql = "SELECT ih_proj4Listing.name,ih_proj4Listing.id FROM ih_proj4Listing ";
 		// uses an inner join to return only the values where the ids match in both tables
 		$sql .= "INNER JOIN ih_proj4Stop ON ih_proj4Listing.stopId = ih_proj4Stop.id ";
 		$sql .= "WHERE ih_proj4Stop.id = $stopID ";
@@ -40,7 +40,7 @@
 		echo "<ol>";
 		while ($row = mysql_fetch_array($result))
 		{
-		 echo "<li><a href>".$row['name']."</a></li>";
+		 echo '<li><a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/listing.php?stop='.$stopID.'&listing='.$row['id'].'">'.$row['name']."</a></li>";
 		 echo "<br>";
 		}
 		echo "</ol>";
