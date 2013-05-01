@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 
 <?
+<<<<<<< HEAD
 session_start();
 
 $age = $_SESSION['age'];
 
 $link = mysql_connect('localhost', 'ijharley', 'ct406');
+=======
+	session_start();
+
+	$age = $_SESSION['age'];
+	
+	$link = mysql_connect('localhost', 'ijharley', 'ct406');
+>>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
     $db = mysql_select_db("ct406s13", $link);
 
 $sql = "SELECT * FROM ih_proj4Stop ORDER BY name";
@@ -66,6 +74,7 @@ $( "#accordion" ).accordion();
 <body>
 
 <div id="wrapper">
+<<<<<<< HEAD
 <img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -236,6 +245,87 @@ echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.p
 </div>
 </div>
 </div>
+=======
+	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="images/dcapartment.jpg" />
+	<img src="images/dcloft.jpg" />
+	<img src="images/dcrowhouses.jpg" />
+	<br>
+	<center>
+	<?
+		echo '<image src="images/';
+		if($age >= 60)
+			echo 'retirement';
+		else
+			echo 'wintervacation';
+		echo '.gif"></image>';
+	?>
+	</center>
+    <div id="leftBox">
+    <h1>No apartment?<span><br /></span>No car?<br />No problem.</h1>	
+    </div>
+    <div id="rightBox">
+    <img src="images/dcmap.png"/>
+    </div>
+    <h2>Finding housing in a new city is hard.</h2>
+    <p>Especially in the Washington, D.C. metro area where housing is spread out from the city center. Luckily, D.C. has one of the best 
+    public transportation systems in the country. The key is trying to find housing that is within a close enough radius to each Metro stop.</p>
+    <p>By Mass Transit attempts to ease the search for good rental housing in the city by only showing the listings you want to see by 
+    the Metro Stop you want to live near. That means if you want to live within a ten minute walk to the Chinatown/Gallery Place Metro station (great location, BTW!), then you'll only see listings
+    for that particular area. It's that simple.</p>
+    <h2>Give it a try:</h2> 
+   <img src="images/metromap.png"> 
+     <div id="landing">
+                    <h3>Click on a station to see available rentals near it:</h3>
+
+                    <div id="map-container">
+                        <img src="img/map.png">
+                          <!-- Red Line -->
+                    <div id="accordion">
+                       <h3><img src="images/redlinebar.png"></h3>
+                        <div>
+						<?
+							for($i = 0; $i < count($rstops); $i ++)
+								echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$rstops[$i].'&stop='.$rids[$i].'">'.$rstops[$i].'</a><br />';
+						?>
+                        </div>
+                        <!-- Orange Line -->
+                        <h3><img src="images/orangelinebar.png"></h3>
+                        <div>
+                        <?
+							for($i = 0; $i < count($ostops); $i ++)
+								echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$ostops[$i].'&stop='.$oids[$i].'">'.$ostops[$i].'</a><br />';
+						?>
+						</div>
+                        <!--Yellow Line-->
+                        <h3><img src="images/yellowlinebar.png"></h3>
+                        <div>
+                        <?
+							for($i = 0; $i < count($ystops); $i ++)
+								echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$ystops[$i].'&stop='.$yids[$i].'">'.$ystops[$i].'</a><br />';
+						?>
+						</div>
+                        <!-- Green Line -->
+                        <h3><img src="images/greenlinebar.png"> </h3>
+                        <div>
+                        <?
+							for($i = 0; $i < count($gstops); $i ++)
+								echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$gstops[$i].'&stop='.$gids[$i].'">'.$gstops[$i].'</a><br />';
+						?>
+						</div>
+                        <!-- Blue Line -->
+						<h3><img src="images/bluelinebar.png"></h3>
+						<div>   
+						<?
+							for($i = 0; $i < count($bstops); $i ++)
+								echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$bstops[$i].'&stop='.$bids[$i].'">'.$bstops[$i].'</a><br />';
+						?>
+						</div>
+	   </div>
+	</div>
+>>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 </div>
 <div id="footer">
 <div id="footerWrapper">

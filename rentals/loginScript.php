@@ -1,8 +1,13 @@
 <?php
 session_start();
 
+<<<<<<< HEAD
 $link = mysql_connect('localhost', 'ijharley', 'ct406');
 $db = mysql_select_db('ct406s13');
+=======
+	$link = mysql_connect('localhost', 'ijharley', 'ct406');
+	$db = mysql_select_db('ct406s13');
+>>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 
 $email = $_POST['email'];
 $passwd = $_POST['passwd'];
@@ -12,6 +17,7 @@ $select = "SELECT * FROM ih_proj4User WHERE email='$email' AND pswd='$hashpass' 
 $result = mysql_query($select);
 $exist = mysql_num_rows($result);
 
+<<<<<<< HEAD
 if (!$exist) {
 header('Location: pass.php?head=Incorrect+Login&sub=Please+try+again');
 }
@@ -23,4 +29,17 @@ while ($row = mysql_fetch_array($result)) {
 }
 header('Location: main.php');
 }
+=======
+	if (!$exist) {
+		header('Location: pass.php?head=Incorrect+Login&sub=Please+try+again');
+	}
+	if ($exist) {
+		while ($row = mysql_fetch_array($result)) {
+ 			$_SESSION['email'] = $row{'email'};
+ 			$_SESSION['age'] = $row{'age'};
+ 			$_SESSION['id'] = $row{'id'};
+		}
+		header('Location: main.php');
+	}
+>>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 ?>
