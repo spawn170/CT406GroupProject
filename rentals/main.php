@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?
+	session_start();
 
 	$link = mysql_connect('localhost', 'ijharley', 'ct406');
     $db = mysql_select_db("ct406s13", $link);

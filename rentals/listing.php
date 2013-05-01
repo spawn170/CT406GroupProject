@@ -1,4 +1,5 @@
 <?
+	session_start();
 
 	$stop = $_REQUEST['stop'];
 	$listing = $_REQUEST['listing'];
@@ -52,7 +53,7 @@
 	
 <?
 	for($i = 0; $i < count($colors); $i ++)
-		echo '<div class="lineD" style="background-color:'.$colors[$i].'"></div>';
+		echo '<image src="images/'.strtolower($colors[$i]).'linebar.png"></image>';
 ?>
 	<center>
 		<h2>Listing near <?=$stopname?>: <?=$name?></h2>
