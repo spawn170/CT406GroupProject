@@ -1,13 +1,8 @@
 <?
 session_start();
 
-<<<<<<< HEAD
 $link = mysql_connect('localhost', 'ijharley', 'ct406');
 $db = mysql_select_db('ct406s13');
-=======
-	$link = mysql_connect('localhost', 'ijharley', 'ct406');
-	$db = mysql_select_db('ct406s13');
->>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 
 $query = "SELECT * FROM ih_proj4User;";
 
@@ -20,7 +15,6 @@ return array_sum($arr)/count($arr);
 
 <!DOCTYPE HTML>
 <html lang="en">
-<<<<<<< HEAD
  <head>
     <meta charset="utf-8">
     <title>By Mass Transit - Find Rentals Near D.C.'s Metro Rail Stops</title>
@@ -31,38 +25,14 @@ return array_sum($arr)/count($arr);
   </head>
 <body>
 <div id="wrapper">
-=======
-<head>
-	<meta charset = "utf-8" />
-	<title>Login</title>
-	<link rel="stylesheet" href="styles/rentals.css" /> 
-</head>
-
-<body>
- 
-	<header>
-	 
-	<nav>
-	
-	</nav>
-	</header>
-	
-<div id="wrapper">
-	
->>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<img src="images/dcapartment.jpg" />
 	<img src="images/dcloft.jpg" />
 	<img src="images/dcrowhouses.jpg" />
-<<<<<<< HEAD
 	<h3>Sign-up to search for your new home!</h3>
-
-=======
-	
 	<section>
->>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 		<article id="SignUp">
 		<form action="registration.php" method="POST">
 		email:<input type="text" name="email" />
@@ -120,14 +90,6 @@ return array_sum($arr)/count($arr);
 	<div id="footerWrapper">
     	<p>&copy;2013. All rights reserved.</p>
     </div>
-</div>
-
-	
-</div>
-<div id="footer">
-	<div id="footerWrapper">
-		<p>&copy;2013. All rights reserved.</p>
-	</div>
 </div>
 	
 </body>

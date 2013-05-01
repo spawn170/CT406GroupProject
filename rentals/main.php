@@ -5,6 +5,8 @@ session_start();
 
 $age = $_SESSION['age'];
 
+$username = $_SESSION['email'];
+
 $link = mysql_connect('localhost', 'ijharley', 'ct406');
 
 $db = mysql_select_db("ct406s13", $link);
@@ -67,6 +69,9 @@ while ($row = mysql_fetch_array($result))
 <body>
 
 <div id="wrapper">
+	Hello, <?=$username?>.
+	<br>
+	<br>
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

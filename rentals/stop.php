@@ -1,5 +1,7 @@
 <?
 session_start();
+
+$username = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +20,9 @@ session_start();
 </head>
 <body>
 <div id = "wrapper">
+	Hello, <?=$username?>.
+	<br>
+	<br>
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
