@@ -6,6 +6,7 @@ session_start();
 $age = $_SESSION['age'];
 
 $username = $_SESSION['email'];
+$ucol = $_SESSION['color'];
 
 $link = mysql_connect('localhost', 'ijharley', 'ct406');
 
@@ -69,7 +70,7 @@ while ($row = mysql_fetch_array($result))
 <body>
 
 <div id="wrapper">
-	Hello, <?=$username?>.
+	<p style="color:<?=$ucol?>">Hello, <?=$username?>.</p>
 	<br>
 	<br>
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

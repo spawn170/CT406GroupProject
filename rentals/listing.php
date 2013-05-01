@@ -2,6 +2,7 @@
 session_start();
 
 $username = $_SESSION['email'];
+$ucol = $_SESSION['color'];
 
 $stop = $_REQUEST['stop'];
 $listing = $_REQUEST['listing'];
@@ -49,7 +50,7 @@ $price = substr($price, 0, $i + 1).','.substr($price,$i + 1);
   <body>
 
 <div id="wrapper">
-	Hello, <?=$username?>.
+	<p style="color:<?=$ucol?>">Hello, <?=$username?>.</p>
 	<br>
 	<br>
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

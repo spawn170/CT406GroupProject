@@ -2,6 +2,7 @@
 session_start();
 
 $username = $_SESSION['email'];
+$ucol = $_SESSION['color'];
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $username = $_SESSION['email'];
 </head>
 <body>
 <div id = "wrapper">
-	Hello, <?=$username?>.
+	<p style="color:<?=$ucol?>">Hello, <?=$username?>.</p>
 	<br>
 	<br>
 	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

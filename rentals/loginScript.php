@@ -22,6 +22,7 @@ while ($row = mysql_fetch_array($result)) {
   $_SESSION['email'] = $row{'email'};
   $_SESSION['age'] = $row{'age'};
   $_SESSION['id'] = $row{'id'};
+  $_SESSION['color'] = $row['color'];
 }
 header('Location: main.php');
 }
