@@ -1,0 +1,12 @@
+.left
+{
+text-align: right;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+.right
+{
+width: 150px;
+padding-left: 10px;
+padding-bottom: 10px;
+}
