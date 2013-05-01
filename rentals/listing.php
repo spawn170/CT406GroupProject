@@ -55,7 +55,7 @@
 		echo '<div class="lineD" style="background-color:'.$colors[$i].'"></div>';
 ?>
 	<center>
-		<h2>Listing near <?$stopname?>: <?=$stopname?></h2>
+		<h2>Listing near <?=$stopname?>: <?=$name?></h2>
 		<br>
 		<table><tbody>
 			<tr>
