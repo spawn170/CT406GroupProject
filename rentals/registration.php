@@ -1,6 +1,6 @@
 <?php
 	// Connect to the database
-	$link = mysql_connect('localhost', 'ijhurley', 'ct406');
+	$link = mysql_connect('localhost', 'ijharley', 'ct406');
 	$db = mysql_select_db('ct406s13');
 
 	// Get form input as well as data we will need for registration
@@ -13,7 +13,7 @@
 	$get = "SELECT * FROM ih_proj4User";
 
 	$result = mysql_query($get);
-	$num = mysql_num_rows($result);
+	$num = mysql_num_rows($result) + 10;
 	// $query = "SELECT * FROM ih_proj4User WHERE email='$email'";
 	$query = sprintf("SELECT * FROM ih_proj4User WHERE email='%s'", mysql_real_escape_string($email));
 	// $insert = "INSERT INTO ih_proj4User (email, pswd, hash, age, color, validate) VALUES ('$email', '$encrypted_passwd', '$hash', $age, '$color', 1);";
