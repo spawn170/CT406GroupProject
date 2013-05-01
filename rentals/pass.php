@@ -3,9 +3,6 @@ $head = $_GET['head'];
 $sub = $_GET['sub'];
 ?>
 
-
-
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>

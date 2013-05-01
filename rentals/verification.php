@@ -1,12 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 $link = mysql_connect('localhost', 'ijhurley', 'ct406');
 $db = mysql_select_db('ct406s13');
-=======
-	$link = mysql_connect('localhost', 'ijhurley', 'ct406');
-	$db = mysql_select_db('ct406s13');
->>>>>>> e81c869e15be0030383006b3c5870b23e14bdbd4
 
 $email = $_GET['email'];
 $hash = $_GET['hash'];
