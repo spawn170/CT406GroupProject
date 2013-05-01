@@ -8,6 +8,11 @@
 {
 	width: 150px;
 	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.left
+{
+	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	text-align: right;

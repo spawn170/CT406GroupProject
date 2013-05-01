@@ -54,7 +54,7 @@ $ucol = $_SESSION['color'];
 		echo "<ol>";
 		while ($row = mysql_fetch_array($result))
 		{
-		 echo '<li><a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/listing.php?stop='.$stopID.'&listing='.$row['id'].'">'.$row['name']."</a></li>";
+		 echo '<li><a href="listing.php?stop='.$stopID.'&listing='.$row['id'].'">'.$row['name']."</a></li>";
 		 echo "<br>";
 		}
 		echo "</ol>";

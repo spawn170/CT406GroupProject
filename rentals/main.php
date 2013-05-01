@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?
 session_start();
 
@@ -48,7 +46,7 @@ while ($row = mysql_fetch_array($result))
     mysql_close($link);
 
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -207,7 +205,7 @@ while ($row = mysql_fetch_array($result))
 		<div>
 			<?
 			for($i = 0; $i < count($rstops); $i ++)
-				echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$rstops[$i].'&stop='.$rids[$i].'">'.$rstops[$i].'</a><br />';
+				echo '<a href="stop.php?stopName='.$rstops[$i].'&stop='.$rids[$i].'">'.$rstops[$i].'</a><br />';
 			?>
 		</div>
 		<!-- Orange Line -->
@@ -215,7 +213,7 @@ while ($row = mysql_fetch_array($result))
 		<div>
 			<?
 			for($i = 0; $i < count($ostops); $i ++)
-				echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$ostops[$i].'&stop='.$oids[$i].'">'.$ostops[$i].'</a><br />';
+				echo '<a href="stop.php?stopName='.$ostops[$i].'&stop='.$oids[$i].'">'.$ostops[$i].'</a><br />';
 			?>
 		</div>
 		<!--Yellow Line-->
@@ -223,7 +221,7 @@ while ($row = mysql_fetch_array($result))
 		<div>
 			<?
 			for($i = 0; $i < count($ystops); $i ++)
-				echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$ystops[$i].'&stop='.$yids[$i].'">'.$ystops[$i].'</a><br />';
+				echo '<a href="stop.php?stopName='.$ystops[$i].'&stop='.$yids[$i].'">'.$ystops[$i].'</a><br />';
 			?>
 		</div>
 		<!-- Green Line -->
@@ -231,7 +229,7 @@ while ($row = mysql_fetch_array($result))
 		<div>
 			<?
 			for($i = 0; $i < count($gstops); $i ++)
-				echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$gstops[$i].'&stop='.$gids[$i].'">'.$gstops[$i].'</a><br />';
+				echo '<a href="stop.php?stopName='.$gstops[$i].'&stop='.$gids[$i].'">'.$gstops[$i].'</a><br />';
 			?>
 		</div>
 		<!-- Blue Line -->
@@ -239,7 +237,7 @@ while ($row = mysql_fetch_array($result))
 		<div>
 			<?
 			for($i = 0; $i < count($bstops); $i ++)
-				echo '<a href="http://leda.capitol-college.edu/~ijharley/project4/rentals/stop.php?stopName='.$bstops[$i].'&stop='.$bids[$i].'">'.$bstops[$i].'</a><br />';
+				echo '<a href="stop.php?stopName='.$bstops[$i].'&stop='.$bids[$i].'">'.$bstops[$i].'</a><br />';
 			?>
 		</div>
 	</div>

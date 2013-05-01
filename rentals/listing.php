@@ -45,6 +45,7 @@ $price = substr($price, 0, $i + 1).','.substr($price,$i + 1);
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
     <link href="styles/rentals.css" rel="stylesheet">
+	<link href="styles/listing.css" rel="stylesheet">
     <title>Listing near <?=$stopname?></title>
   </head>
   <body>
