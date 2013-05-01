@@ -104,7 +104,7 @@ while ($row = mysql_fetch_array($result))
 	for that particular area. It's that simple.</p>
 	<h2>Give it a try:</h2>
 	<div id="landing">
-		<h3>Click on a station to see available rentals near it:</h3>
+		<h3>Click on a station on the map to view it on the WMATA site:</h3>
 		<div id="map-container">
 			<div style="text-align:center; width:750px; margin-left:auto; margin-right:auto;">
 				<img id="Image-Maps_9201304282340034" src="http://www.image-maps.com/uploaded_files/9201304282340034_metromap.gif" usemap="#Image-Maps_9201304282340034" border="0" width="750" height="717" alt="" />
@@ -200,6 +200,7 @@ while ($row = mysql_fetch_array($result))
 			</div>
 		</div>
 	</div>
+	<h3>Click on a station from these lists to view rentals near it:</h3>
 	<!-- Red Line -->
 	<div id="accordion">
 		<h3><img src="images/redlinebar.png"></h3>
