@@ -24,15 +24,16 @@
 	}
 	else if ($exist) {
 		//create the new user in the database
-		$to      = $email; 
-		$subject = 'Metro Listings Email Verification';
-		$message = ' 
-		You forgot your password?
-		Click the link in order to reset your password. 
-		------------------------ 
-		http://leda.capitol-college.edu/npharrell/resetPass.php?email='.$email.'';
-		$headers = 'From:noreply@metrolistings.com' . "\r\n";
-		mail($to, $subject, $message, $headers);
+		// $to      = $email; 
+		// $subject = 'Metro Listings Email Verification';
+		// $message = ' 
+		// You forgot your password?
+		// Click the link in order to reset your password. 
+		// ------------------------ 
+		// http://leda.capitol-college.edu/npharrell/resetPass.php?email='.$email.'';
+		// $headers = 'From:noreply@metrolistings.com' . "\r\n";
+		// mail($to, $subject, $message, $headers);
+		header('Location: resetPass.php?email='.$email.'');
 	}
 
 

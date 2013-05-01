@@ -9,4 +9,5 @@ $update = "UPDATE ih_proj4User SET pswd='$encrypted_newPass' WHERE email='$email
 
 // Update the database with this new information
 $result = mysql_query($update);
+header('Location: pass.php?head=Password+Updated&sub=Try+logging+in');
 ?>
