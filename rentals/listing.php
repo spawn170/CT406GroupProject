@@ -39,7 +39,7 @@
 <head>
 	<link href="styles/rentals.css" rel="stylesheet" />
 	<link href="styles/listing.css" rel="stylesheet" />
-	<title>By Mass Transit - Find Rentals Near D.C.'s Metro Rail Stops</title>
+	<title>Listing near <?=$stopname?></title>
 </head>
 
 <body>
@@ -75,10 +75,10 @@
 		<br>
 		<a href="stop.php?stop=<?=$stop?>">Go Back</a>
 	</center>
-	<div id="footer">
-			<div id="footerWrapper">
-				<p>&copy;2013. All rights reserved.</p>
-			</div>
+</div>
+<div id="footer">
+	<div id="footerWrapper">
+		<p>&copy;2013. All rights reserved.</p>
 	</div>
 </div>
 </body>

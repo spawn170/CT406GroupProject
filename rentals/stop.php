@@ -55,11 +55,10 @@
 	<center>
 		<a href="main.php">Go Back</a>
 	</center>
-	
-	<div id="footer">
-		<div id="footerWrapper">
-			<p>&copy;2013. All rights reserved.</p>
-		</div>
+</div>
+<div id="footer">
+	<div id="footerWrapper">
+		<p>&copy;2013. All rights reserved.</p>
 	</div>
 </div>
 </body>

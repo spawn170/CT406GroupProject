@@ -18,9 +18,7 @@
 <head>
 	<meta charset = "utf-8" />
 	<title>Login</title>
-	<link rel="stylesheet" href="styles/rentals.css" />
-	
- 
+	<link rel="stylesheet" href="styles/rentals.css" /> 
 </head>
 
 <body>
@@ -31,6 +29,15 @@
 	
 	</nav>
 	</header>
+	
+<div id="wrapper">
+	
+	<img src="images/bptlogo.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="images/dcapartment.jpg" />
+	<img src="images/dcloft.jpg" />
+	<img src="images/dcrowhouses.jpg" />
 	
 	<section>
 		<article id="SignUp">
@@ -91,6 +98,12 @@
 	<footer>
 	</footer>
 	
+</div>
+<div id="footer">
+	<div id="footerWrapper">
+		<p>&copy;2013. All rights reserved.</p>
+	</div>
+</div>
 	
 </body>
 </html>
