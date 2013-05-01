@@ -73,6 +73,7 @@
 	<img src="images/dcloft.jpg" />
 	<img src="images/dcrowhouses.jpg" />
 	<br>
+	<center>
 	<?
 		echo '<image src="images/';
 		if($age >= 60)
@@ -81,6 +82,7 @@
 			echo 'wintervacation';
 		echo '.gif"></image>';
 	?>
+	</center>
     <div id="leftBox">
     <h1>No apartment?<span><br /></span>No car?<br />No problem.</h1>	
     </div>

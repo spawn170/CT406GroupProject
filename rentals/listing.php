@@ -51,11 +51,11 @@
 	<img src="images/dcloft.jpg" />
 	<img src="images/dcrowhouses.jpg" />
 	
+	<center>
 <?
 	for($i = 0; $i < count($colors); $i ++)
 		echo '<image src="images/'.strtolower($colors[$i]).'linebar.png"></image>';
 ?>
-	<center>
 		<h2>Listing near <?=$stopname?>: <?=$name?></h2>
 		<br>
 		<table><tbody>

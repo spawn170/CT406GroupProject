@@ -1,7 +1,7 @@
 <?
 	session_start();
 
-	$link = mysql_connect('localhost', 'apmaricich', 'ct406');
+	$link = mysql_connect('localhost', 'ijharley', 'ct406');
 	$db = mysql_select_db('ct406s13');
 
 	$query = "SELECT * FROM ih_proj4User;";
@@ -18,8 +18,7 @@
 <head>
 	<meta charset = "utf-8" />
 	<title>Login</title>
-	<link rel="stylesheet" 
-		href="style.css" />
+	<link rel="stylesheet" href="styles/rentals.css" />
 	
  
 </head>
